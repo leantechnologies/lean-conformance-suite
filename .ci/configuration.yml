@@ -1,0 +1,6 @@
+pipelines:
+  JavaScript:
+    nodeSelector: javascript
+    buildDocker: true
+    versioningType: HashVer
+    pushDockerLatest: true.
