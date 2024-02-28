@@ -1,0 +1,22 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "Balance": [
+        {
+          "Amount": {
+            "Amount": "304.39",
+            "Currency": "SAR"
+          },
+          "CreditDebitIndicator": "KSAOB.Credit",
+          "Type": "KSAOB.OpeningAvailable",
+          "DateTime": "2024-01-21T11:44:24.283+00:00"
+        }
+      ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/balances"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }

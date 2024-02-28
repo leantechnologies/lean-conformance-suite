@@ -1,0 +1,30 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "Beneficiary": [
+        {
+          "BeneficiaryId": "11235335",
+          "BeneficiaryType": "KSAOB.Activated",
+          "CreditorAgent": {
+            "IdentificationType": "KSAOB.BICFI",
+            "Identification": "1008"
+          },
+          "AccountHolderName": "Saleh Waheed Alghamdi",
+          "AccountHolderShortName": "Saleh Waheed Alghamdi",
+          "CreditorAccount": [
+            {
+              "IdentificationType": "KSAOB.IBAN",
+              "Identification": "SA5080000146608010554454",
+              "Name": "Saleh Waheed Alghamdi"
+            }
+          ]
+        }
+      ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/beneficiaries"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }

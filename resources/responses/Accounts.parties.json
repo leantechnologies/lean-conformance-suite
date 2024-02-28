@@ -1,0 +1,49 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "Party": [
+        {
+          "PartyId": "2373940",
+          "PartyNumber": "2373940",
+          "PartyType": "KSAOB.Sole",
+          "VerifiedClaims": [
+            {
+              "Verification": {
+                "Evidence": [
+                  {
+                    "Type": "document",
+                    "CheckDetails": [ ],
+                    "Attachments": [ ],
+                    "DocumentDetails": {
+                      "Type": "idcard",
+                      "PersonalNumber": "111111111111",
+                      "DocumentNumber": "111111111111",
+                      "CalendarType": "KSAOB.GregorianCalendar"
+                    }
+                  }
+                ],
+                "TrustFramework": "SA_IAM",
+                "AssuranceLevel": "ial2"
+              },
+              "Claims": {
+                "Sub": "111111111111",
+                "Name": "SALEH WAHEED BIN SALEH ALGHAMDI",
+                "GivenName": "SALEH WAHEED BIN SALEH ALGHAMDI",
+                "FamilyName": "ALGHAMDI",
+                "EmailVerified": false,
+                "Gender": "M",
+                "PhoneNumberVerified": false
+              }
+            }
+          ],
+          "AccountRole": "KSAOB.Administrator"
+        }
+      ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/parties"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }

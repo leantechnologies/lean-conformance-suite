@@ -1,0 +1,70 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "StandingOrder": [
+        {
+          "StandingOrderId": "68201235335000.1",
+          "Frequency": "IntervalMonthDay:01:27",
+          "FirstPaymentDateTime": "2023-07-27T00:00:00.000+00:00",
+          "NextPaymentDateTime": "2023-07-27T00:00:00.000+00:00",
+          "FinalPaymentDateTime": "2023-08-27T00:00:00.000+00:00",
+          "NumberOfPayments": "2",
+          "StandingOrderStatusCode": "KSAOB.Inactive",
+          "FirstPaymentAmount": {
+            "Amount": "100.00",
+            "Currency": "SAR"
+          },
+          "FinalPaymentAmount": {
+            "Amount": "100.00",
+            "Currency": "SAR"
+          },
+          "CreditorAgent": {
+            "IdentificationType": "KSAOB.BICFI",
+            "Identification": "1008",
+            "Name": "AlRajhi Bank"
+          },
+          "CreditorAccount": [
+            {
+              "IdentificationType": "KSAOB.AccountNumber",
+              "Identification": "SA5080000146608010554454"
+            }
+          ]
+        },
+        {
+          "StandingOrderId": "68201235335000.2",
+          "Frequency": "IntervalMonthDay:01:27",
+          "FirstPaymentDateTime": "2023-07-27T00:00:00.000+00:00",
+          "NextPaymentDateTime": "2023-07-27T00:00:00.000+00:00",
+          "FinalPaymentDateTime": "2023-08-27T00:00:00.000+00:00",
+          "NumberOfPayments": "2",
+          "StandingOrderStatusCode": "KSAOB.Inactive",
+          "FirstPaymentAmount": {
+            "Amount": "100.00",
+            "Currency": "SAR"
+          },
+          "FinalPaymentAmount": {
+            "Amount": "100.00",
+            "Currency": "SAR"
+          },
+          "CreditorAgent": {
+            "IdentificationType": "KSAOB.BICFI",
+            "Identification": "1008",
+            "Name": "AlRajhi Bank"
+          },
+          "CreditorAccount": [
+            {
+              "IdentificationType": "KSAOB.AccountNumber",
+              "Identification": "SA5080000146608010554454"
+            }
+          ]
+        }
+      ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/standing-orders"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }
+  

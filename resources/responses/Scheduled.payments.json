@@ -1,0 +1,12 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "ScheduledPayment": [ ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/scheduled-payments"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }

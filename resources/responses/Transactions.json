@@ -1,0 +1,557 @@
+{
+    "Data": {
+      "AccountId": "68201235335000",
+      "Transaction": [
+        {
+          "TransactionId": "FT23329519Q7",
+          "TransactionDateTime": "2023-11-25T07:54:00.000+00:00",
+          "TransactionReference": "FT23329519Q7",
+          "TransactionType": "KSAOB.Teller",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "204180617728450",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-11-25T07:54:00.000+00:00",
+          "ValueDateTime": "2023-11-25T07:54:00.000+00:00",
+          "Amount": { 
+            "Amount": "32",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "32",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "تسوية بطاقة الائتمان لـ SAR32.00 في المركز الرئيسى الرياض في تاريخ     الاستحقاق 11/25/2023 الرقم المرجعي FT23329519Q7 سعر الصرف الساعة 0754  رقم الحساب 68201235335000",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23246CGKM4",
+          "TransactionDateTime": "2023-09-02T23:02:00.000+00:00",
+          "TransactionReference": "FT23246CGKM4",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "203340625982972",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-09-02T23:02:00.000+00:00",
+          "ValueDateTime": "2023-09-02T23:02:00.000+00:00",
+          "Amount": {
+            "Amount": "55.75",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "55.75",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            "KSAOB.StandingOrder"
+          ],
+          "TransactionInformation": "- عبر مصرف الإنماء Sarie Ben. Customer تحويل الأمر الدائم إلى (IBAN:) تكييف ALGHAMDI SALEHW المكتب   الرئيسي بالرياض إلى Saleh Waheed Alghamdi لصالح اسم المستفيد 20230903 تاريخ القيمة مرجع تحويلات      شخصية الغرض من الدفع 2302 وقت 1.00 معدلSAR 50.00 كمية البنك المرسل الإنماء 68201235335000 حساب       المرسل SALEH WAHEED ALGHAMDI                                                                         صالح الغامدى اسم المرسل SAR5.00 مصاريف",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23213Z6780",
+          "TransactionDateTime": "2023-07-31T23:11:00.000+00:00",
+          "TransactionReference": "FT23213Z6780",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "203010625383485",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-31T23:11:00.000+00:00",
+          "ValueDateTime": "2023-07-31T23:11:00.000+00:00",
+          "Amount": {
+            "Amount": "55.75",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "55.75",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            "KSAOB.StandingOrder"
+          ],
+          "TransactionInformation": "- عبر مصرف الإنماء Sarie Ben. Customer تحويل الأمر الدائم إلى (IBAN:) تكييف ALGHAMDI SALEHW المكتب   الرئيسي بالرياض إلى Saleh Waheed Alghamdi لصالح اسم المستفيد 20230801 تاريخ القيمة مرجع تحويلات      شخصية الغرض من الدفع 2311 وقت 1.00 معدلSAR 50.00 كمية البنك المرسل الإنماء 68201235335000 حساب       المرسل SALEH WAHEED ALGHAMDI                                                                         صالح الغامدى اسم المرسل SAR5.00 مصاريف",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232120110",
+          "TransactionDateTime": "2023-07-31T13:24:00.000+00:00",
+          "TransactionReference": "CHG232120110",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "203010350348241",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-31T13:24:00.000+00:00",
+          "ValueDateTime": "2023-07-31T13:24:00.000+00:00",
+          "Amount": {
+            "Amount": "10",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "10",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "سوم إنشاء أمر مستديم الرقم من مصرف الإنماءالمرجعي 68201235335000.3 تاريخ         الاستحقاق 20230731 عملة SAR معدل 1.00",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232120110",
+          "TransactionDateTime": "2023-07-31T13:24:00.000+00:00",
+          "TransactionReference": "CHG232120110",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "203010350348241",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-31T13:24:00.000+00:00",
+          "ValueDateTime": "2023-07-31T13:24:00.000+00:00",
+          "Amount": {
+            "Amount": "1.5",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "1.5",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": ". ضريبة القيمة المضافة المستحقة  ",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232070102",
+          "TransactionDateTime": "2023-07-26T14:03:00.000+00:00",
+          "TransactionReference": "CHG232070102",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "202960355950635",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-26T14:03:00.000+00:00",
+          "ValueDateTime": "2023-07-26T14:03:00.000+00:00",
+          "Amount": {
+            "Amount": "10",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "10",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "سوم إنشاء أمر مستديم الرقم من مصرف الإنماءالمرجعي 68201235335000.2 تاريخ         الاستحقاق 20230726 عملة SAR معدل 1.00",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232070102",
+          "TransactionDateTime": "2023-07-26T14:03:00.000+00:00",
+          "TransactionReference": "CHG232070102",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "202960355950635",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-26T14:03:00.000+00:00",
+          "ValueDateTime": "2023-07-26T14:03:00.000+00:00",
+          "Amount": {
+            "Amount": "1.5",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "1.5",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": ". ضريبة القيمة المضافة المستحقة  ",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232070100",
+          "TransactionDateTime": "2023-07-26T13:54:00.000+00:00",
+          "TransactionReference": "CHG232070100",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "202960362250067",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-26T13:54:00.000+00:00",
+          "ValueDateTime": "2023-07-26T13:54:00.000+00:00",
+          "Amount": {
+            "Amount": "10",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "10",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "سوم إنشاء أمر مستديم الرقم من مصرف الإنماءالمرجعي 68201235335000.1 تاريخ         الاستحقاق 20230726 عملة SAR معدل 1.00",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "CHG232070100",
+          "TransactionDateTime": "2023-07-26T13:54:00.000+00:00",
+          "TransactionReference": "CHG232070100",
+          "TransactionType": "KSAOB.SameBankTransfer",
+          "SubTransactionType": "KSAOB.NotApplicable",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "202960362250067",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-07-26T13:54:00.000+00:00",
+          "ValueDateTime": "2023-07-26T13:54:00.000+00:00",
+          "Amount": {
+            "Amount": "1.5",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "1.5",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": ". ضريبة القيمة المضافة المستحقة  ",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "ATM022031700",
+          "TransactionDateTime": "2023-06-19T11:26:00.000+00:00",
+          "TransactionReference": "ATM022031700",
+          "TransactionType": "KSAOB.ECommerce",
+          "SubTransactionType": "KSAOB.Purchase",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "202590606441175",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-06-19T11:26:00.000+00:00",
+          "ValueDateTime": "2023-06-19T11:26:00.000+00:00",
+          "Amount": {
+            "Amount": "50",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "50",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "معاملة شراء عبر الإنترنتمن حساب       5000 50 SAR من Abyan في           19-06-2023 11:25AM Abyan Riyadh SA",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23158KL6M0",
+          "TransactionDateTime": "2023-06-07T15:28:00.000+00:00",
+          "TransactionReference": "FT23158KL6M0",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Online",
+          "StatementReference": "202470102255735",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-06-07T15:28:00.000+00:00",
+          "ValueDateTime": "2023-06-07T15:28:00.000+00:00",
+          "Amount": {
+            "Amount": "200.58",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "200.58",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "حوالة صادرة سريع من خلال مصرف الانماء عبر الجبيل الصناعية رجال الى (IBAN:SA82550000000M1795800177)   Saleh Waheed Alghamdi في البنك السعودي الفرنسي تاريخ الاستحقاق 06/07/2023 رقم المرجع FT23158KL6M0    الرسوم SAR0.50 ضريبة القيمة المضافة SAR0.08 X$ الغرض من التحويل تفاصيل الدفع 10$ الساعة 11$ سعر",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23101569BV",
+          "TransactionDateTime": "2023-04-11T12:00:00.000+00:00",
+          "TransactionReference": "FT23101569BV",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Online",
+          "StatementReference": "201900105343259",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-04-11T12:00:00.000+00:00",
+          "ValueDateTime": "2023-04-11T12:00:00.000+00:00",
+          "Amount": {
+            "Amount": "1107.15",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "1107.15",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "حوالة صادرة سريع من خلال مصرف الانماء عبر الجبيل الصناعية رجال الى (IBAN:SA5080000146608010554454)   Saleh Waheed Alghamdi في مصرف الراجحي تاريخ الاستحقاق 04/11/2023 رقم المرجع FT23101569BV الرسوم      SAR1.00 ضريبة القيمة المضافة SAR0.15 X$ الغرض من التحويل تفاصيل الدفع 10$ الساعة 11$ سعر الصرف",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23089857QZ",
+          "TransactionDateTime": "2023-03-30T11:05:00.000+00:00",
+          "TransactionReference": "FT23089857QZ",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Online",
+          "StatementReference": "201780100339908",
+          "CreditDebitIndicator": "KSAOB.Debit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-03-30T11:05:00.000+00:00",
+          "ValueDateTime": "2023-03-30T11:05:00.000+00:00",
+          "Amount": {
+            "Amount": "13581.78",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "13581.78",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "حوالة صادرة سريع من خلال مصرف الانماء عبر الجبيل الصناعية رجال الى (IBAN:SA5080000146608010554454)   Saleh Waheed Alghamdi في مصرف الراجحي تاريخ الاستحقاق 03/30/2023 رقم المرجع FT23089857QZ الرسوم      SAR1.00 ضريبة القيمة المضافة SAR0.15 X$ الغرض من التحويل تفاصيل الدفع 10$ الساعة 11$ سعر الصرف",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23087TBRZV",
+          "TransactionDateTime": "2023-03-28T13:16:00.000+00:00",
+          "TransactionReference": "FT23087TBRZV",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "201760606247795",
+          "CreditDebitIndicator": "KSAOB.Credit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-03-28T13:16:00.000+00:00",
+          "ValueDateTime": "2023-03-28T13:16:00.000+00:00",
+          "Amount": {
+            "Amount": "13580.63",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "13580.63",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "التحويل الوارد سريع من بنك الانماء-قسم الحوالات الرياض في ALBILAD BANK through Alinma Bank تاريخ الاستحقاق 03/28/2023 رقم المرجع FT23087TBRZV المبلغ 13580.63 SAR من Lynn Technologies Saudi             Information(IBAN:SA8815000431137613420005) الوقت 1316 دفع الغرض تفاصيل الدفع",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23068V10SV",
+          "TransactionDateTime": "2023-03-09T14:30:00.000+00:00",
+          "TransactionReference": "FT23068V10SV",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "201570607652243",
+          "CreditDebitIndicator": "KSAOB.Credit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-03-09T14:30:00.000+00:00",
+          "ValueDateTime": "2023-03-09T14:30:00.000+00:00",
+          "Amount": {
+            "Amount": "1106.00",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "1106.00",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "التحويل الوارد سريع من بنك الانماء-قسم الحوالات الرياض في ALBILAD BANK through Alinma Bank تاريخ الاستحقاق 03/09/2023 رقم المرجع FT23068V10SV المبلغ 1106.00 SAR من Lynn Technologies Saudi              Information(IBAN:SA8815000431137613420005) الوقت 1430 دفع الغرض تفاصيل الدفع",
+          "BillDetails": {
+            "BillerId": null
+          }
+        },
+        {
+          "TransactionId": "FT23058XPHSR",
+          "TransactionDateTime": "2023-02-27T10:39:00.000+00:00",
+          "TransactionReference": "FT23058XPHSR",
+          "TransactionType": "KSAOB.LocalBankTransfer",
+          "SubTransactionType": "KSAOB.MoneyTransfer",
+          "PaymentModes": "KSAOB.Offline",
+          "StatementReference": "201470604938354",
+          "CreditDebitIndicator": "KSAOB.Credit",
+          "Status": "KSAOB.Booked",
+          "BookingDateTime": "2023-02-27T10:39:00.000+00:00",
+          "ValueDateTime": "2023-02-27T10:39:00.000+00:00",
+          "Amount": {
+            "Amount": "436.36",
+            "Currency": "SAR"
+          },
+          "ChargeAmount": {
+            "Amount": "436.36",
+            "Currency": "SAR",
+            "ChargeIncluded": false
+          },
+          "MerchantDetails": {
+            "MerchantName": "",
+            "MerchantId": 0
+          },
+          "LocalTimeZone": "UTC+03:00",
+          "Flags": [
+            null
+          ],
+          "TransactionInformation": "التحويل الوارد سريع من بنك الانماء-قسم الحوالات الرياض في ALBILAD BANK through Alinma Bank تاريخ الاستحقاق 02/27/2023 رقم المرجع FT23058XPHSR المبلغ 436.36 SAR من Lynn Technologies Saudi               Information(IBAN:SA8815000431137613420005) الوقت 1039 دفع الغرض تفاصيل الدفع",
+          "BillDetails": {
+            "BillerId": null
+          }
+        }
+      ]
+    },
+    "Links": {
+      "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts/68201235335000/transactions?fromBookingDateTime=2019-01-21&toBookingDateTime=2024-01-21"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }

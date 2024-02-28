@@ -1,0 +1,31 @@
+{
+  "Data": {
+    "Account": [
+      {
+        "Status": "Active",
+        "Currency": "SAR",
+        "Nickname": "68201235335000",
+        "AccountType": "KSAOB.Retail",
+        "AccountSubType": "CurrentAccount",
+        "AccountIdentifiers": [
+          {
+            "IdentificationType": "KSAOB.IBAN",
+            "Identification": "SA0405000068201235335000",
+            "Name": "SALEH WAHEED BIN SALEH ALGHAMDI"
+          },
+          {
+            "IdentificationType": "KSAOB.NationalID",
+            "Identification": "1093214185"
+          }
+        ],
+        "Description": "ALGHAMDISALEHW"
+      }
+    ]
+  },
+  "Links": {
+    "Self": "https://rs-ob.alinma.com/open-banking/account-information/2022.11.01-final-errata2/accounts"
+  },
+  "Meta": {
+    "TotalPages": 1
+  }
+}
