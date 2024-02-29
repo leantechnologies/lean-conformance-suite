@@ -3,7 +3,7 @@ require('dotenv').config();
 const uuid = 'e36dfb06-b007-4dcb-8b99-b9d10451ac12';
 const host = process.env.HOST + ':' + process.env.PORT
 const {endpointList} = require('../models/data')
-const config = {
+const config = { 
   method: 'get',
   headers: {
     authorization: 'Bearer ',
