@@ -8,7 +8,7 @@ const config = {
   headers: {
     authorization: 'Bearer ',
   },
-};
+}
 
 // test for conformance
 async function runTests() {
