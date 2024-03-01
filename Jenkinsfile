@@ -65,7 +65,7 @@ timestamps {
         echo "[ERROR] 🔴 Exception during build: $reason"
         reason.printStackTrace()
         currentBuild.result = 'FAILURE'
-    } finally {
+    } finally { 
         node() {
             step([$class: 'ClaimPublisher'])
             cleanWs()
