@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
-
 /**
  *   Main file that is being picked by jenkins multibranch pipeline.
  *   Must only connect things common to all pipelines.
