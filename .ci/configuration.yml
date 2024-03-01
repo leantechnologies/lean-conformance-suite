@@ -3,4 +3,4 @@ pipelines:
     nodeSelector: javascript
     buildDocker: true
     versioningType: HashVer
-    pushDockerLatest: true.
+    pushDockerLatest: true
