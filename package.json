@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "service": "node ./service.js",
-    "wiretap": "wiretap -u http://localhost:3000 -s ./resources/open.api.spec --stream-report --report-filename ./reports/conformance-report.json",
+    "wiretap": "wiretap -u http://localhost:3000 -s resources/open.api.spec/KSA.AccountInformationServices.yaml --stream-report --report-filename ./reports/conformance-report.json",
     "test": "node ./tests/conformance.tests.js",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
