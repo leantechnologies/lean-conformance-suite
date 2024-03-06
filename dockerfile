@@ -24,4 +24,4 @@ RUN chmod +x /usr/src/app/entrypoint.sh
 EXPOSE 3000
 
 # Set the default command to run the script
-CMD ["/usr/src/app/entrypoint.sh"]
+CMD ["/usr/src/app/scripts/entrypoint.sh"]
