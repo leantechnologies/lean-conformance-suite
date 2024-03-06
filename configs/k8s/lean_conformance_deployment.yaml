@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lean-conformance-service
+  labels:
+    app: lean-conformance-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lean-conformance-service
+    template:
+      metadata:
+        labels:
+          app: lean-conformance-service
+      spec:
+        containers:
+          - name: lean-conformance-service
+            image: lean-conformance-service:latest
+            ports:
+              - containerPort: 9090
+              
