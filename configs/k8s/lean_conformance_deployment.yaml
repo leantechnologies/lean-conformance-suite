@@ -9,14 +9,43 @@ spec:
   selector:
     matchLabels:
       app: lean-conformance-service
-    template:
-      metadata:
-        labels:
-          app: lean-conformance-service
-      spec:
-        containers:
-          - name: lean-conformance-service
-            image: lean-conformance-service:latest
-            ports:
-              - containerPort: 9090
-              
+  template:
+    metadata:
+      labels:
+        app: lean-conformance-service
+    spec:
+      containers:
+      - name: lean-conformance-service
+        image: lean-conformance-service:v1.0.0 # Consider versioning
+        livenessProbe:
+          httpGet:
+            path: /live
+            port: 9090
+          timeoutSeconds: 5
+          periodSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 9090
+          timeoutSeconds: 5
+          periodSeconds: 10
+          failureThreshold: 3
+        resources:
+          requests:
+            memory: "2000Mi"
+            cpu: "200m"
+            ephemeral-storage: "500Mi"
+          limits:
+            memory: "2500Mi"
+            ephemeral-storage: "1000Mi"
+        envFrom:
+        - secretRef:
+            name: lean-secret
+        - secretRef:
+            name: conformance-secret
+        ports:
+        - containerPort: 9090
+      imagePullSecrets:
+      - name: aws-ecr
+      terminationGracePeriodSeconds: 30 # Add for graceful termination 

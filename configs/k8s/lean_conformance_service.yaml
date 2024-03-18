@@ -1,13 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lean-conformance-service-api
-  labels:
-    app: lean-conformance-service
+  name: lean-conformance-service
 spec:
-  type: LoadBalancer
-  selector:
-    app: lean-conformance-service
+  type: NodePort
   ports:
-    - port: 9090
+    - name: serivce
+      port: 80
       targetPort: 9090
+      nodePort: 30092
+    - name: management
+      port: 16000
+      targetPort: 16000
+      nodePort: 32104
+  selector:
+    app: lean-conformance-service 
