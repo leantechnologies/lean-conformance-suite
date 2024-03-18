@@ -17,8 +17,8 @@ RUN npm install
 COPY . .
 
 # Create a script to run Wiretap, conformance.js, and start the server
-COPY entrypoint.sh /usr/src/app/entrypoint.sh
-RUN chmod +x /usr/src/app/entrypoint.sh
+COPY ./scripts/entrypoint.sh /usr/src/app/scripts/entrypoint.sh
+RUN chmod +x /usr/src/app/scripts/entrypoint.sh
 
 # Expose the port your app runs on
 EXPOSE 3000
