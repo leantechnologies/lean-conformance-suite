@@ -1,27 +1,29 @@
-const { S3 } = require('aws-sdk');
-const global = require('../global')
+// @ts-nocheck
+
+import { S3 } from 'aws-sdk';
+import global from '../global';
 require('dotenv').config();
-const { bank_list, endpointList } = require('../models/data')
+import { bank_list, endpointList } from '../models/data';
 var bucketName = process.env.BUCKETNAME
 var namespace = process.env.NAMESPACE
 var region = process.env.REGION
-var s3
 // https://axjj8th4b6iy.compat.objectstorage.me-jeddah-1.oraclecloud.com
 var accessKeyId = process.env.ACCESSKEY
 var secretAccessKey = process.env.SECRETKEY
-
-async function fetchRawBankResponse () {
-    const s3 = new S3({
+let s3: S3 
+async function fetchRawBankResponse() {
+    s3 = new S3({
         region,
         accessKeyId,
         secretAccessKey,
         endpoint: `https://` + namespace + `.compat.objectstorage.` + region + `.oraclecloud.com`,
         s3ForcePathStyle: true,
         signatureVersion: 'v4',
-    });
+    })
 
     const bucketParams = {
-        Bucket: bucketName
+        Bucket: bucketName,
+        Prefix: global.bank_identifier
     };
 
     try {
@@ -32,7 +34,7 @@ async function fetchRawBankResponse () {
     }
 }
 
-async function listS3Objects(s3, params) {
+async function listS3Objects(s3: S3, params) {
     return new Promise((resolve, reject) => {
         s3.listObjects(params, (err, data) => {
             if (err) {
@@ -44,8 +46,17 @@ async function listS3Objects(s3, params) {
     });
 }
 
-async function getFileData(s3, data, bank, user_requested_endpoint) {
+// async function _getFileNamesByPrefix(prefix: string) {
+//     const filenames = (await this.#s3client.listObjectsV2({ Bucket: HTTP_LOGGING_BUCKET_NAME, Prefix: prefix })
+//       .promise())
+//       .Contents?.map(c => c.Key).filter(k => k) as string[]
+//     return filenames
+//   }
+
+
+async function getFileData(s3: S3, data, bank, user_requested_endpoint) {
     let exit_flag = false
+    console.log('number of files: ' + data.Contents.length)
     for (let index = 0; index < data.Contents.length; index++) {
 
         let key = data.Contents[index].Key.toString();
@@ -57,27 +68,22 @@ async function getFileData(s3, data, bank, user_requested_endpoint) {
 
             const { Body } = await s3.getObject(params).promise()
             const data = JSON.parse(Body);
-
             for (let i = 0; i < data.log.entries.length; i++) {
-                if (!(data.log.entries[i].request.url).includes('/' + user_requested_endpoint)) {
-                    console.log(`No ${user_requested_endpoint} call available in this har file!`)
-                    break
-                } else {
+                const url = data.log.entries[i].request.url;
+                console.log('URL: ' + url)
+                if (url.endsWith('/' + user_requested_endpoint) || url.includes('transactions')) {
                     const json_body = JSON.parse(Body);
                     const raw_response = JSON.stringify(json_body.log.entries[i].response.content.text)
                     let filtered_response = raw_response.replace(/\n/g, '')
-                    exit_flag = true
                     global.end_point = data.log.entries[i].request.url
-                    global.correlationId = key
+                    global.correlationId = data.log.comment
+                    console.log(JSON.parse(filtered_response))
                     return JSON.parse(filtered_response);
                 }
             }
         }
-        if (exit_flag) {
-            console.log('Parsed bank response!')
-            break
-        }
     }
+    console.log('No file for this endpoint and bank found')
 }
 
 module.exports = fetchRawBankResponse;

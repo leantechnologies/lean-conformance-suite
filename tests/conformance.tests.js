@@ -11,6 +11,7 @@ const config = {
 }
 
 // test for conformance
+
 async function runTests() {
   for (let index = 0; index < endpointList.length; index++) {
     config.url = host + endpointList[index];
