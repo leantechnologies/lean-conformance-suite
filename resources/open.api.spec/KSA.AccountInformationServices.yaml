@@ -1418,6 +1418,7 @@ components:
     AccountHolderShortName:
       title: "AccountHolderShortName"
       type: "string"
+      
       description: |
         * /accounts resource
         The Account holder nick name
@@ -1753,6 +1754,7 @@ components:
         - "DirectDebitStatusCode"
         - "Name"
         - "Frequency"
+        - "PreviousPaymentDateTime"
       properties:
         DirectDebitId:
           $ref: "#/components/schemas/DirectDebitId"
@@ -1917,6 +1919,7 @@ components:
       required:
         - "IdentificationType"
         - "Identification"
+        - "Name"
       properties:
         IdentificationType:
           $ref: "#/components/schemas/OBExternalFinancialInstitutionIdentificationCode"
@@ -2437,6 +2440,12 @@ components:
       required:
         - "BeneficiaryId"
         - "BeneficiaryType"
+        - "AccountHolderName"
+        - "AccountHolderShortName"
+        - "Reference"
+        - "SupplementaryData"
+        - "CreditorAgent"
+        - "CreditorAccount"
       properties:
         BeneficiaryId:
           $ref: "#/components/schemas/BeneficiaryId"
@@ -2877,6 +2886,11 @@ components:
           type: "object"
           required:
             - "TrustFramework"
+            - "AssuranceLevel"
+            - "AssuranceProcess"
+            - "Time"
+            - "VerificationProcess"
+            - "Evidence"
           properties:
             TrustFramework:
               type: "string"
@@ -2960,6 +2974,34 @@ components:
             IdentityAssurance Claims:
             [https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html#name-claims](https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html#name-claims)
           type: "object"
+          required:
+            - Sub
+            - Name
+            - GivenName
+            - FamilyName
+            - MiddleName
+            - Nickname
+            - PreferredUsername
+            - Profile
+            - Picture
+            - Website
+            - Email
+            - EmailVerified
+            - Gender
+            - BirthDate
+            - ZoneInfo
+            - Locale
+            - PhoneNumber
+            - PhoneNumberVerified
+            - Salutation
+            - Title
+            - Msisdn
+            - BirthFamilyName
+            - BirthGivenName
+            - BirthMiddleName
+            - AlsoKnownAs
+            - PlaceOfBirth
+            - Address
           properties:
             Sub:
               description: |
@@ -3283,6 +3325,13 @@ components:
         Address object as per OpenID Connect Core 1.0 Address Claim
         [https://openid.net/specs/openid-connect-core-1_0.html#AddressClaim](https://openid.net/specs/openid-connect-core-1_0.html#AddressClaim)
       type: "object"
+      required:
+        - Formatted
+        - StreetAddress
+        - Locality
+        - Region
+        - PostalCode
+        - Country
       properties:
         Formatted:
           description: |
@@ -3439,9 +3488,31 @@ components:
         - "BookingDateTime"
         - "Amount"
         - "TransactionDateTime"
+        - "LocalTimeZone"
         - "TransactionType"
         - "SubTransactionType"
         - "PaymentModes"
+        - "StatementReference"
+        - "TransactionReference"
+        - "TerminalId"
+        - "Flags"
+        - "TransactionMutability"
+        - "BookingDateTime"
+        - "ValueDateTime"
+        - "TransactionInformation"
+        - "ChargeAmount"
+        - "ChargeAmountVat"
+        - "CurrencyExchange"
+        - "BankTransactionCode"
+        - "ProprietaryBankTransactionCode"
+        - "Balance"
+        - "MerchantDetails"
+        - "CreditorAgent"
+        - "CreditorAccount"
+        - "DebtorAgent"
+        - "DebtorAccount"
+        - "CardInstrument"
+        - "BillDetails"
       properties:
         TransactionId:
           $ref: "#/components/schemas/TransactionId"
@@ -3548,6 +3619,16 @@ components:
       description: "Unambiguous identification of the account to which credit and debit entries are made. The following fields are optional only for accounts that are switched:\n\n  * Data.Currency  \n  * Data.AccountType  \n  * Data.AccountSubType\n\nFor all other accounts, the fields must be populated by the PASP."
       required:
         - "AccountId"
+        - "AccountHolderName"
+        - "AccountHolderShortName"
+        - "Nickname"
+        - "MaturityDate"
+        - "Status"
+        - "Currency"
+        - "AccountType"
+        - "AccountSubType"
+        - "OpeningDate"
+        - "Description"
       properties:
         AccountId:
           $ref: "#/components/schemas/AccountId"
@@ -3755,6 +3836,7 @@ components:
         - "Type"
         - "DateTime"
         - "Amount"
+        - "CreditLine"
       properties:
         CreditDebitIndicator:
           $ref: "#/components/schemas/OBCreditDebitCode_2"

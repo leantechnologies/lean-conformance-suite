@@ -8,59 +8,71 @@ const global = require('../global')
 router.get('/accounts', async (req, res) => {
       console.log('=== CONFORMANCE FOR ACCOUNTS ENDPOINT ===')
       const response = await fetchRawBankResponse();
-      res.json(JSON.parse(response));
+      if (!response) {
+        return res.status(500).json("No data for this endpoint found")
+    }
+    res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/balances', async (req, res) => {
     console.log('=== CONFORMANCE FOR BALANCES ENDPOINT ===')
     const response = await fetchRawBankResponse();
+    if (!response) {
+        return res.status(500)
+    }
     res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/transactions', async (req, res) => {
     console.log('=== CONFORMANCE FOR TRANSACTIONS ENDPOINT ===')
     const response = await fetchRawBankResponse();
-    res.json(response);
+    if (!response) {
+        return res.status(500)
+    }
+    res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/beneficiaries', async (req, res) => {
     console.log('=== CONFORMANCE FOR BENEFICIARIES ENDPOINT ===')
     const response = await fetchRawBankResponse();
-    res.json(response);
+    if (!response) {
+        return res.status(500)
+    }
+    res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/scheduled-payments', async (req, res) => {
     console.log('=== CONFORMANCE FOR SCHEDULED PAYMENTS ENDPOINT ===')
     const response = await fetchRawBankResponse();
     if (!response) {
-        res.status(500).json("No data for this endpoint found")
+        return res.status(500)
     }
-    res.json(response);
+    res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/standing-orders', async (req, res) => {
     console.log('=== CONFORMANCE FOR STANDING ORDERS ENDPOINT ===')
     const response = await fetchRawBankResponse();
     if (!response) {
-        res.status(500).json("No data for this endpoint found")
+        return res.status(500)
     }
-    res.json(response);
+    res.json(JSON.parse(response));
 });
 
 router.get('/parties', async (req, res) => {
     console.log('=== CONFORMANCE FOR IDENTITY ENDPOINT ===')
     const response = await fetchRawBankResponse();
     if (!response) {
-        res.status(500).json("No data for this endpoint found")
+        return res.status(500)
     }
-    res.json(response);
+    res.json(JSON.parse(response));
 });
 
 router.get('/accounts/:uuid/parties', async (req, res) => {
     console.log('=== CONFORMANCE FOR ACCOUNTS IDENTITY ENDPOINT ===')
     const response = await fetchRawBankResponse();
     if (!response) {
-        res.status(500).json("No data for this endpoint found")
+        return res.status(500)
     }
     res.json(JSON.parse(response));
 });
