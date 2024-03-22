@@ -46,14 +46,6 @@ async function listS3Objects(s3: S3, params) {
     });
 }
 
-// async function _getFileNamesByPrefix(prefix: string) {
-//     const filenames = (await this.#s3client.listObjectsV2({ Bucket: HTTP_LOGGING_BUCKET_NAME, Prefix: prefix })
-//       .promise())
-//       .Contents?.map(c => c.Key).filter(k => k) as string[]
-//     return filenames
-//   }
-
-
 async function getFileData(s3: S3, data, bank, user_requested_endpoint) {
     let exit_flag = false
     console.log('number of files: ' + data.Contents.length)
