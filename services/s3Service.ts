@@ -4,19 +4,21 @@ import { S3 } from 'aws-sdk';
 import global from '../global';
 require('dotenv').config();
 import { bank_list, endpointList } from '../models/data';
-var bucketName = process.env.BUCKETNAME
-var namespace = process.env.NAMESPACE
-var region = process.env.REGION
-// https://axjj8th4b6iy.compat.objectstorage.me-jeddah-1.oraclecloud.com
-var accessKeyId = process.env.ACCESSKEY
-var secretAccessKey = process.env.SECRETKEY
+var bucketName = process.env.HTTP_LOGGING_BUCKET_NAME
+var region = process.env.HTTP_LOGGING_BUCKET_REGION
+var s3_endpoint = HTTP_LOGGING_BUCKET_ENDPOINT
+if (s3_endpoint == undefined || s3_endpoint == null) {
+    throw new Error(`S3 endpoint is null/undefined: ${s3_endpoint}`)
+}
+var accessKeyId = process.env.HTTP_LOGGING_BUCKET_ACCESS_KEY
+var secretAccessKey = process.env.HTTP_LOGGING_BUCKET_SECRET_KEY
 let s3: S3 
 async function fetchRawBankResponse() {
     s3 = new S3({
         region,
         accessKeyId,
         secretAccessKey,
-        endpoint: `https://` + namespace + `.compat.objectstorage.` + region + `.oraclecloud.com`,
+        endpoint: s3_endpoint,
         s3ForcePathStyle: true,
         signatureVersion: 'v4',
     })
