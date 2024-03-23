@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# linter fix
+npm run lint:fix
+
+# Check if the linting passed
+if [ $? -eq 0 ]; then
+  # Commit message with a thank-you note
+  echo "🎉 Thank you for your clean code commitment! Keep up the good work! 🚀"
+else
+  # Linting failed, display an issue message
+  echo "🙌 Dear sir/madam, It seems that there are some issues in your code. Please fix them first. 💡"
+fi
