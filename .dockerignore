@@ -1,0 +1,25 @@
+# Dependency directories 
+node_modules/
+npm-debug.log
+
+# Logs
+logs
+*.log
+
+# Reports and local development artifacts
+*.test 
+*.spec
+/coverage
+
+# Operating system files
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
