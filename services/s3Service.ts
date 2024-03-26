@@ -6,7 +6,7 @@ require('dotenv').config();
 import { bank_list, endpointList } from '../models/data';
 var bucketName = process.env.HTTP_LOGGING_BUCKET_NAME
 var region = process.env.HTTP_LOGGING_BUCKET_REGION
-var s3_endpoint = HTTP_LOGGING_BUCKET_ENDPOINT
+var s3_endpoint = process.env.HTTP_LOGGING_BUCKET_ENDPOINT
 if (!s3_endpoint) {
     throw new Error(`S3 endpoint is null/undefined: ${s3_endpoint}`)
 }
